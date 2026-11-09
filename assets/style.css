@@ -223,3 +223,8 @@ details.q .a{padding:0 1rem .85rem 3.4rem;color:var(--fg)}
 .pager a.nx{text-align:right;grid-column:2}
 .pager a:hover{border-color:var(--accent)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* links into the high-school map */
+a.hs::after{content:" ↗";color:var(--muted);font-size:.85em}
+.stage{font-size:.88rem;margin:.3rem 0 0}
+.stage a{font-weight:700;text-decoration:none}
