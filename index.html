@@ -5,18 +5,27 @@
 <title>중학수학 목차 및 개념</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&family=STIX+Two+Text:ital@0;1&display=swap">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+.titlerow{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 36px}
+.titlerow .hs{font-size:1.05rem;font-weight:500}
+.tools.front{margin-top:12px}
+.lecture{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:.92rem}
+#hideBtn{background:var(--ge);border-color:var(--ge);color:var(--paper);font-weight:700}
+#hideBtn[aria-pressed="true"]{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.btn.lec{text-decoration:none;background:var(--accent);border-color:var(--accent);color:var(--paper);font-weight:700}
+.btn:hover{filter:brightness(1.08)}
+</style>
 </head>
 <body>
 <div class="wrap">
   <header class="hero">
     <div>
-      <h1>중학수학 목차 및 개념</h1>
-      <p class="motto"><b>나무를 보느라 숲을 보지 못한다!</b> &nbsp;목차도 외우지 못하면 수학을 포기하는 것과 같다.</p>
-      <p class="stage"><a class="hs" href="https://high-math.vercel.app/">고등수학 목차 및 개념</a></p>
-    </div>
-    <div class="tools">
-      <span class="progress" id="prog">이해한 단원 <b>0</b> / 27</span>
-      <button class="btn" id="hideBtn" aria-pressed="false">목차 가리고 외우기</button>
+      <div class="titlerow"><h1>중학수학 목차 및 개념</h1><a class="hs" href="https://high-math.vercel.app/">고등수학 목차 및 개념 →</a></div>
+      <div class="tools front">
+        <span class="progress" id="prog">이해한 단원 <b>0</b> / 27</span>
+        <button class="btn" id="hideBtn" aria-pressed="false">목차 가리고 외우기</button>
+        <span class="lecture">목차와 개념 숙지후 <a class="btn lec" href="lecture.html">강의 듣기 →</a></span>
+      </div>
     </div>
   </header>
   <div class="map">
