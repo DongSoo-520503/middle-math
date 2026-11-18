@@ -1,0 +1,23 @@
+/* 용어와 정의 블록 + 목차 화면의 정의 표시 */
+.gloss{margin:22px 0 6px;background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px 10px}
+.gloss .gl-h{font-size:1.3rem;margin:0 0 8px}
+.gl{margin:0;display:grid;gap:0}
+.gi{padding:9px 0;border-top:1px dashed var(--line);display:grid;grid-template-columns:minmax(8.5rem,11rem) minmax(0,1fr);gap:4px 14px}
+.gi:first-child{border-top:none}
+.gi dt{font-weight:700;line-height:1.4;display:flex;flex-direction:column;gap:1px}
+.gi dt .hj{font-weight:400;color:var(--muted);font-size:.9rem;letter-spacing:.04em}
+.gi dt .unit{font-family:var(--f-body);font-weight:500;font-size:.7rem;color:var(--paper);background:var(--accent);border-radius:999px;padding:0 .5rem;width:max-content;margin-bottom:2px}
+.gi dd{margin:0;min-width:0;display:flex;flex-direction:column;gap:2px}
+.gi .pt{font-size:.86rem;color:var(--muted)}
+.gi .df{line-height:1.55}
+.gi.main dt b{width:max-content;max-width:100%;line-height:1.3;padding:0 2px;background:linear-gradient(transparent 58%,var(--hl) 58%)}
+@media (max-width:560px){.gi{grid-template-columns:1fr;gap:2px}.gi dt{flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:2px 8px}}
+
+/* index: 정의 줄 */
+.map .def{display:none;font-weight:400;font-size:.8rem;line-height:1.45;color:var(--muted);margin-top:2px}
+.map .def .dhj{color:var(--accent);margin-right:.35em}
+body.defs .map .def{display:block}
+body.hide .map .def{display:none}
+body.hide .map .lbl.shown + .def{display:block}
+#defBtn{background:var(--g2,#7446bf);border-color:var(--g2,#7446bf);color:var(--paper);font-weight:700}
+#defBtn[aria-pressed="true"]{background:var(--fg);border-color:var(--fg);color:var(--bg)}
