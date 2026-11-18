@@ -9,6 +9,8 @@
 <style>
 .titlerow{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 36px}
 .titlerow .hs{font-size:1.05rem;font-weight:500}
+.hero>div{flex:1 1 auto;min-width:0}
+.dedi{margin-left:auto;align-self:flex-start;font-family:var(--f-math);font-style:italic;font-size:1.05rem;color:var(--muted);white-space:nowrap}
 .tools.front{margin-top:12px}
 .lecture{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:.92rem}
 #hideBtn{background:var(--ge);border-color:var(--ge);color:var(--paper);font-weight:700}
@@ -21,7 +23,7 @@
 <div class="wrap">
   <header class="hero">
     <div>
-      <div class="titlerow"><h1>중학수학 목차 및 개념</h1><a class="hs" href="https://high-math.vercel.app/">고등수학 목차 및 개념 →</a></div>
+      <div class="titlerow"><h1>중학수학 목차 및 개념</h1><a class="hs" href="https://high-math.vercel.app/">고등수학 목차 및 개념 →</a><span class="dedi">For Jay &amp; Tay, by Grandpa</span></div>
       <div class="tools front">
         <span class="progress" id="prog">이해한 단원 <b>0</b> / 27</span>
         <button class="btn" id="defBtn" aria-pressed="false">뜻 함께 보기</button>
